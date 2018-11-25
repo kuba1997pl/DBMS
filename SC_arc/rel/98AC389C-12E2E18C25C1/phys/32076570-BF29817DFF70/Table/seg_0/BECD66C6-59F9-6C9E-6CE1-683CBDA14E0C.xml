@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Obiekt_Sportowy" directorySegmentName="seg_0" id="BECD66C6-59F9-6C9E-6CE1-683CBDA14E0C">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="lokalizacja" id="252E3D6E-E6D4-7DB4-758B-0497858C7243">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="typ_obiektu" id="69856F23-5AA7-D64B-CAB7-13461157D3FF">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_obiektu" id="A679648F-8ABD-9DC2-25C9-C51FE4399F73">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazwa" id="CC1C61E2-A928-3368-DE95-CFFD9AFFFC1E">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Obiekt_Sportowy_PK" id="08F8ACC8-E5EE-BB47-DD94-F4D76CE57237">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

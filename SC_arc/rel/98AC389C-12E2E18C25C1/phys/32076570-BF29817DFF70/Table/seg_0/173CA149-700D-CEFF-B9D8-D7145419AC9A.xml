@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Zawody" directorySegmentName="seg_0" id="173CA149-700D-CEFF-B9D8-D7145419AC9A">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Obiekt_Sportowy_id_obiektu" id="065BAFA6-F5BD-5BE9-8E3A-3B75055A8D1C">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dyscyplina" id="25C39FD6-D8EC-ED74-EFD7-811F684CA55B">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="oplata_startowa" id="94BFE751-3FCD-48E2-E44F-0C30622B3667">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data" id="CDA78338-F49D-72D2-FBE6-72520942C82F">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazwa" id="F7377779-F0DC-B437-A238-C5C6FE0D9C79">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Zawody_Obiekt_Sportowy_FK" id="7A141A32-8D63-6B11-0DBA-33BFEE9F77E9">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Zawody_PK" id="D1A62A2D-AB5E-A9FC-C66B-EE5ABC07D1A0">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Klient" directorySegmentName="seg_0" id="656ADE7A-FE88-FADD-0F17-2EE76EFB4B06">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nazwisko" id="042BB4BD-18F8-24A2-1511-2B1474FD768C">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_klienta" id="070D3872-C567-DFAA-1C85-EBA1148343B0">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="imie" id="E21A40D2-4A27-2D12-CB68-50FDEA2D78C8">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Klient_PK" id="1E70C639-58E8-2B2D-A05D-C8724DBB01E4">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 13:08:15 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

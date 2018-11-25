@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="001C599B-00FC-4580-A36A-0555AD6842E6" name="Karnet">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:52:44 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cena" id="BEB366DD-F51F-B4F3-B8A0-CC45B3901302">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:52:50 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_rozp" id="B994D7F5-A1E5-35CD-3A9F-0DB3D5FF4B40">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:53:10 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_zakon" id="3943E2E3-E388-D6E8-E2F0-D0CD32E680DF">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:53:24 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_klienta" id="C32C49C5-B787-85E1-68F4-C7D824D75EBE">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:54:14 UTC</createdTime>
+<generatorID>2FC6FECA-A386-F778-23B3-A11F6D13BC64</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<referedAttribute>95035715-CE87-A409-2F09-F6EB66909A33</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zajec" id="E5E72605-3936-60E8-BE6D-75AB16345BB2">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 15:49:09 UTC</createdTime>
+<generatorID>EE640F39-3B07-C311-8445-0C0AE40DD30C</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<referedAttribute>33F9AB2F-C679-3526-FE0E-BD2C3340E18A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FCB3908A-4353-55C3-F425-1C42587E4DA1" name="Karnet PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 20:05:37 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>2FC6FECA-A386-F778-23B3-A11F6D13BC64,EE640F39-3B07-C311-8445-0C0AE40DD30C</newElementsIDs>
+<usedAttributes>
+<attributeRef>C32C49C5-B787-85E1-68F4-C7D824D75EBE</attributeRef>
+<attributeRef>E5E72605-3936-60E8-BE6D-75AB16345BB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
