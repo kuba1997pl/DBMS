@@ -15,44 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="cena" id="BEB366DD-F51F-B4F3-B8A0-CC45B3901302">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 19:52:50 UTC</createdTime>
-<ownerDesignName>SC_arc</ownerDesignName>
-<engineerTo>
-<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,7,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="data_rozp" id="B994D7F5-A1E5-35CD-3A9F-0DB3D5FF4B40">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 19:53:10 UTC</createdTime>
-<ownerDesignName>SC_arc</ownerDesignName>
-<engineerTo>
-<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="data_zakon" id="3943E2E3-E388-D6E8-E2F0-D0CD32E680DF">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 19:53:24 UTC</createdTime>
-<ownerDesignName>SC_arc</ownerDesignName>
-<engineerTo>
-<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_klienta" id="C32C49C5-B787-85E1-68F4-C7D824D75EBE">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 19:54:14 UTC</createdTime>
@@ -79,6 +41,44 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cena" id="BEB366DD-F51F-B4F3-B8A0-CC45B3901302">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:52:50 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_rozp" id="B994D7F5-A1E5-35CD-3A9F-0DB3D5FF4B40">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:53:10 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_zakon" id="3943E2E3-E388-D6E8-E2F0-D0CD32E680DF">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:53:24 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

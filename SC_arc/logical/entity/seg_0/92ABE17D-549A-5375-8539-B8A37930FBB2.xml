@@ -28,6 +28,20 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_obiektu" id="298E5062-D62E-F522-E9FF-E8DE16EE81D2">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 19:31:48 UTC</createdTime>
+<generatorID>8BF945DA-FB9A-5473-B149-E8EC582634C8</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
+</engineerTo>
+<referedAttribute>9C7C6E87-D363-AA23-D7BD-394F127113C0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="data" id="7E3FA6C9-D187-281E-EFD1-DB1FCFC374A2">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 19:29:45 UTC</createdTime>
@@ -67,20 +81,6 @@
 <dataTypePrecision>2</dataTypePrecision>
 <dataTypeScale>5</dataTypeScale>
 <ownDataTypeParameters>,2,5</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_obiektu" id="298E5062-D62E-F522-E9FF-E8DE16EE81D2">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 19:31:48 UTC</createdTime>
-<generatorID>8BF945DA-FB9A-5473-B149-E8EC582634C8</generatorID>
-<ownerDesignName>SC_arc</ownerDesignName>
-<engineerTo>
-<item key="98AC389C-1CF5-FB2F-790C-12E2E18C25C1" value="true"/>
-</engineerTo>
-<referedAttribute>9C7C6E87-D363-AA23-D7BD-394F127113C0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

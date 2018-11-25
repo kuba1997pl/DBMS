@@ -8,6 +8,36 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Klient_id_klienta" id="7DE2664B-8EC9-C4CC-2782-6885374859D9">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-21 20:36:00 UTC</createdTime>
+<generatorID>C32C49C5-B787-85E1-68F4-C7D824D75EBE</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="091E84D1-CDBA-8714-4D23-8CFC6B86EED7" referredColumn="070D3872-C567-DFAA-1C85-EBA1148343B0"/>
+</associations>
+</Column>
+<Column name="Zajecia_id_zajec" id="B65755C2-33B0-2464-3CA9-8B2332D7D200">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 15:49:53 UTC</createdTime>
+<generatorID>E5E72605-3936-60E8-BE6D-75AB16345BB2</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2B7D53E-9704-D1FF-ED27-AD3A295ADC1B" referredColumn="4665893B-9177-3016-ACBF-7BFF1E2DF6ED"/>
+</associations>
+</Column>
 <Column name="cena" id="E6ABD91E-3638-8108-5AC5-2001057A25F2">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 20:36:00 UTC</createdTime>
@@ -16,9 +46,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="data_rozp" id="9BE28068-CF42-467E-2D01-040204A3715D">
@@ -42,48 +72,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Klient_id_klienta" id="7DE2664B-8EC9-C4CC-2782-6885374859D9">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 20:36:00 UTC</createdTime>
-<generatorID>C32C49C5-B787-85E1-68F4-C7D824D75EBE</generatorID>
-<ownerDesignName>SC_arc</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="091E84D1-CDBA-8714-4D23-8CFC6B86EED7" referredColumn="070D3872-C567-DFAA-1C85-EBA1148343B0"/>
-</associations>
-</Column>
-<Column name="Zajecia_id_zajec" id="42FF1DEB-D621-5E80-3B6D-F94B0757757D">
-<createdBy>kuba</createdBy>
-<createdTime>2018-11-21 20:36:00 UTC</createdTime>
-<generatorID>7C576BB7-EC1D-FC93-1F57-1601733BAA5F</generatorID>
-<ownerDesignName>SC_arc</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_zajec" id="B65755C2-33B0-2464-3CA9-8B2332D7D200">
-<createdBy>Piter</createdBy>
-<createdTime>2018-11-25 15:49:53 UTC</createdTime>
-<generatorID>E5E72605-3936-60E8-BE6D-75AB16345BB2</generatorID>
-<ownerDesignName>SC_arc</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B2B7D53E-9704-D1FF-ED27-AD3A295ADC1B" referredColumn="4665893B-9177-3016-ACBF-7BFF1E2DF6ED"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

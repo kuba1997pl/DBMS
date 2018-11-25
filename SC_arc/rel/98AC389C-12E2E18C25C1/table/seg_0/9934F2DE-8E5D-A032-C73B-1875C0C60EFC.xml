@@ -73,9 +73,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Trener_PESEL" id="9896B673-0710-488E-AB83-212AB138742A">
@@ -88,11 +88,11 @@
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <dataTypeSize>11</dataTypeSize>
-<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AC6215C6-DA69-A835-D026-AA0004B39750" referredColumn="DBA3DE7F-6164-F265-20BB-05A61CDFC6AA"/>
+<colAssociation fkAssociation="1D52240C-A74B-0E28-2652-46EE5139D4B5" referredColumn="DBA3DE7F-6164-F265-20BB-05A61CDFC6AA"/>
 </associations>
 </Column>
 <Column name="Obiekt_Sportowy_id_obiektu" id="A8DAF131-503D-4A06-FD68-21A78F43FF4F">
@@ -111,7 +111,7 @@
 <colAssociation fkAssociation="4E17DA1F-DFF2-F374-046C-A57550A76509" referredColumn="A679648F-8ABD-9DC2-25C9-C51FE4399F73"/>
 </associations>
 </Column>
-<Column name="Sala_Obiekt_Sportowy_id_obiektu" id="29638C19-A594-5CE3-B04F-CD2AAE452FA4">
+<Column name="Sala_Obiekt_Sportowy_id_ob" id="29638C19-A594-5CE3-B04F-CD2AAE452FA4">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 20:36:00 UTC</createdTime>
 <generatorID>8E7709F6-27E6-51B7-E70C-DDC7CB7D20DC</generatorID>
@@ -136,8 +136,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -181,9 +181,9 @@
 <colUsage columnID="A8DAF131-503D-4A06-FD68-21A78F43FF4F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F0010703-40D7-0948-221C-6DE1FEF523AF" name="Zajecia_Trener_FK">
+<ind_PK_UK id="650010A0-CF1D-EA23-FD22-E40493E6D81E" name="Zajecia_Trener_FK">
 <createdBy>Piter</createdBy>
-<createdTime>2018-11-25 15:49:53 UTC</createdTime>
+<createdTime>2018-11-25 18:46:32 UTC</createdTime>
 <generatorID>D4332074-728A-A7D2-3C3A-5C1565029647</generatorID>
 <ownerDesignName>SC_arc</ownerDesignName>
 <indexState>Foreign Key</indexState>

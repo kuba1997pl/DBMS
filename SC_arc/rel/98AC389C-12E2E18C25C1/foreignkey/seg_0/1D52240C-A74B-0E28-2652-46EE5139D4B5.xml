@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC6215C6-DA69-A835-D026-AA0004B39750" containerWithKeyObject="9934F2DE-8E5D-A032-C73B-1875C0C60EFC" localFKIndex="F0010703-40D7-0948-221C-6DE1FEF523AF" name="Zajecia_Trener_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1D52240C-A74B-0E28-2652-46EE5139D4B5" containerWithKeyObject="9934F2DE-8E5D-A032-C73B-1875C0C60EFC" localFKIndex="650010A0-CF1D-EA23-FD22-E40493E6D81E" name="Zajecia_Trener_FK">
 <createdBy>Piter</createdBy>
-<createdTime>2018-11-25 15:49:53 UTC</createdTime>
+<createdTime>2018-11-25 18:46:32 UTC</createdTime>
 <generatorID>D4332074-728A-A7D2-3C3A-5C1565029647</generatorID>
 <ownerDesignName>SC_arc</ownerDesignName>
 <referredTableLongName>Trener</referredTableLongName>

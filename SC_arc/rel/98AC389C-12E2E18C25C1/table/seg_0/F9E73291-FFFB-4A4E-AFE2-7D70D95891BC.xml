@@ -8,6 +8,17 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_wyposazenia" id="40A60BD2-8ADD-D219-3446-E84D234B0156">
+<createdBy>Piter</createdBy>
+<createdTime>2018-11-25 15:10:48 UTC</createdTime>
+<generatorID>1977C11D-D93F-78C4-AFEA-FDF38A07B1AB</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="nazwa" id="0BEE2B74-DC59-E899-CB21-92B91A772BEF">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 20:36:00 UTC</createdTime>
@@ -29,7 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ilosc" id="E42510E2-4553-E0F3-2D16-28C19296AC5D">
@@ -60,7 +72,7 @@
 <colAssociation fkAssociation="F6937D77-2667-AEFA-B1AF-F6008767CC81" referredColumn="A679648F-8ABD-9DC2-25C9-C51FE4399F73"/>
 </associations>
 </Column>
-<Column name="Sala_Obiekt_Sportowy_id_obiektu" id="1F13995D-C3E8-C67F-D71D-9C87C8B0CAF8">
+<Column name="Sala_Obiekt_Sportowy_id_ob" id="1F13995D-C3E8-C67F-D71D-9C87C8B0CAF8">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 20:36:00 UTC</createdTime>
 <generatorID>22BF995C-6FC1-D180-BCD6-18B2AFCD671F</generatorID>
@@ -76,17 +88,6 @@
 <colAssociation fkAssociation="51CC87C8-A843-5CA4-B9AD-CAD59517D4C3" referredColumn="73FC3829-7FD6-0263-B3FE-737165E75E0C"/>
 </associations>
 </Column>
-<Column name="id_wyposazenia" id="40A60BD2-8ADD-D219-3446-E84D234B0156">
-<createdBy>Piter</createdBy>
-<createdTime>2018-11-25 15:10:48 UTC</createdTime>
-<generatorID>1977C11D-D93F-78C4-AFEA-FDF38A07B1AB</generatorID>
-<ownerDesignName>SC_arc</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Sala_nr_sali" id="B8FBC794-E797-8B8B-8D1C-02054B2EDED1">
 <createdBy>kuba</createdBy>
 <createdTime>2018-11-21 20:36:00 UTC</createdTime>
@@ -96,7 +97,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
+<dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
