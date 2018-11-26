@@ -47,6 +47,10 @@ insert into karnet values (4, 1, 275.50, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_
 insert into karnet values (3, 2, 245.04, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 3, 210, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 1, 180.5, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
+insert into uczestnik values ('89081887811', 'Bury', 'Hubert', 0);
+insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
+insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
+
 */
 
 
