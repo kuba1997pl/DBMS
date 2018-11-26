@@ -1,5 +1,10 @@
 /*
 --INITIALIZES SAMPLE DATA
+--alter table karnet modify cena number(6,2);
+--alter zajecia karnet modify cena number(6,2);
+--alter table zajecia modify godzina_rozp date;
+--alter table zajecia modify godzina_zakon date;
+--alter table zawody modify oplata_startowa number(6,2);
 create SEQUENCE seq_id_obiektu minvalue 0 start with 0 increment by 1;
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.nextval, 'ul. Piotrowo 4, 61-138, Poznan', 'Centrum Sportu Politechniki Poznanskiej', 'budynek');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 1', 'kort tenisowy');
@@ -32,8 +37,17 @@ insert into klient values (seq_id_klienta.nextval, 'Ala', 'Kolot');
 insert into klient values (seq_id_klienta.nextval, 'Andrzej', 'Bakat');
 insert into klient values (seq_id_klienta.nextval, 'Piotr', 'Krupa');
 insert into klient values (seq_id_klienta.nextval, 'Konrad', 'Tyma');
+create SEQUENCE seq_id_zajec minvalue 0 start with 0 increment by 1;
+insert into zajecia values (seq_id_zajec.nextval, 'poniedzialek', to_timestamp('12:00:00','HH24:MI:SS'), to_timestamp('13:00:00','HH24:MI:SS'), 'Silownia', '30', '68063073877', NULL, 1, 'Silownia');
+insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('19:00:00','HH24:MI:SS'), 'Silownia', '40', '68063073877', NULL, 1, 'Silownia');
+insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('19:00:00','HH24:MI:SS'), to_timestamp('21:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
+insert into zajecia values (seq_id_zajec.nextval, 'piatek', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('20:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
+insert into zajecia values (seq_id_zajec.nextval, 'wtorek', to_timestamp('9:00:00','HH24:MI:SS'), to_timestamp('11:00:00','HH24:MI:SS'), 'Tenis', '70', '76071319471', 3, NULL, NULL);
+insert into karnet values (4, 1, 275.50, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
+insert into karnet values (3, 2, 245.04, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
+insert into karnet values (1, 3, 210, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
+insert into karnet values (1, 1, 180.5, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 */
-
 
 
 /*
@@ -53,7 +67,7 @@ BEGIN
   END LOOP;
 
 END;
-/**/
+*/
 /*
 CREATE TABLE karnet (
     klient_id_klienta   INTEGER NOT NULL,

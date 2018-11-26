@@ -8,7 +8,7 @@
 CREATE TABLE karnet (
     klient_id_klienta   INTEGER NOT NULL,
     zajecia_id_zajec    INTEGER NOT NULL,
-    cena                FLOAT(2) NOT NULL,
+    cena                NUMBER(6,2) NOT NULL,
     data_rozp           DATE NOT NULL,
     data_zakon          DATE NOT NULL
 );
@@ -106,7 +106,7 @@ CREATE TABLE zajecia (
     godzina_rozp                 TIMESTAMP NOT NULL,
     godzina_zakon                TIMESTAMP NOT NULL,
     dyscyplina                   VARCHAR2(50) NOT NULL,
-    cena                         FLOAT(2) NOT NULL,
+    cena                         NUMBER(6,2) NOT NULL,
     trener_pesel                 VARCHAR2(11),
     obiekt_sportowy_id_obiektu   INTEGER,
     sala_obiekt_sportowy_id_ob   INTEGER,
@@ -133,7 +133,7 @@ CREATE TABLE zawody (
     nazwa                        VARCHAR2(50) NOT NULL,
     data                         DATE NOT NULL,
     dyscyplina                   VARCHAR2(50) NOT NULL,
-    oplata_startowa              FLOAT(2),
+    oplata_startowa              NUMBER(6,2),
     obiekt_sportowy_id_obiektu   INTEGER NOT NULL
 );
 
