@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD26AC09-5B13-8869-3DFC-6B7CEB4D5701" name="Zawody">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>15058A35-D0A0-390C-17FD-C89CF5B9FABA</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>173CA149-700D-CEFF-B9D8-D7145419AC9A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nazwa" id="27ADE53B-11F4-65A8-C5E4-F921EDD69B2D">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>47C2AF15-945C-B9A7-C254-EF00F74AE2BF</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>F7377779-F0DC-B437-A238-C5C6FE0D9C79</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="F12E66FC-85DA-4431-8EE5-AB6A806A8343">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>C60F276B-C3F0-BA53-5A29-2652A71981FF</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>CDA78338-F49D-72D2-FBE6-72520942C82F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dyscyplina" id="C2D3B51B-60E1-D7D4-4072-A2AD54D0E972">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>DEDFD11B-629A-E10B-005C-4D47C7A8A1DB</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>25C39FD6-D8EC-ED74-EFD7-811F684CA55B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oplata_startowa" id="B3CB4944-70E5-8965-6FC2-3737A592B9E3">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>2E0309C8-59AB-FBE3-62D7-CFF5B3135304</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>94BFE751-3FCD-48E2-E44F-0C30622B3667</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Obiekt_Sportowy_id_obiektu" id="629C1205-2F9C-98BD-A9C1-17BBD45ED186">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>5728FB88-0ED5-A1AA-8F91-C46F214A81E8</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>065BAFA6-F5BD-5BE9-8E3A-3B75055A8D1C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BAB29DC-0E49-CE02-DE65-108D90D74F58" referredColumn="3DE479AF-F6C4-7855-8E35-C075F0229ED7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="930523B4-6BA0-8A93-9EC5-EB182A3F069F" name="Zawody_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>1631EE6D-2B31-F0A9-7F5D-941DCD456435</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>D1A62A2D-AB5E-A9FC-C66B-EE5ABC07D1A0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27ADE53B-11F4-65A8-C5E4-F921EDD69B2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="558D1F11-E544-3C38-D647-E71DF5DE2BC4" name="Zawody_Obiekt_Sportowy_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>93E606C2-1F33-3986-C5C9-895F1BCAE680</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="629C1205-2F9C-98BD-A9C1-17BBD45ED186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

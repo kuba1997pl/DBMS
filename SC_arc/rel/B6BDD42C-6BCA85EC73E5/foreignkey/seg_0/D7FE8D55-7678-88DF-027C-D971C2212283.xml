@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D7FE8D55-7678-88DF-027C-D971C2212283" containerWithKeyObject="75D1BCC8-44A8-013A-24E2-D1102A7468E9" localFKIndex="951DE5E2-D914-562B-F716-381C9CCD1EAE" name="Karnet_Zajecia_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>334ACF46-35E8-B120-567A-792E4811ED7C</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<referredTableLongName>Zajecia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14308210-41F0-9B89-A591-A0DD4CB7E003</referredTableID>
+<keyObject>0B001094-7D0E-682B-7EA9-6D72A67F0DC8</keyObject>
+<referredKeyID>0B001094-7D0E-682B-7EA9-6D72A67F0DC8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_zajec</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

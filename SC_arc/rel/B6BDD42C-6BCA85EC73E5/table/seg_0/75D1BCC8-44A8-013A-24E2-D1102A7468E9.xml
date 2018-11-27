@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75D1BCC8-44A8-013A-24E2-D1102A7468E9" name="Karnet">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>E2EEB647-30F5-4E74-EB3C-7767A23A9088</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Klient_id_klienta" id="7AE19333-1232-7532-EF8D-80DD8F36F661">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>B179B822-AAA6-E2C0-EED1-91209839AC74</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBE3CBFD-B90D-3442-9D86-CE7A233C1464" referredColumn="477B8584-5BFB-822B-9A2F-DD6BE7ED19B4"/>
+</associations>
+</Column>
+<Column name="Zajecia_id_zajec" id="EAECBB1C-E0E5-6BAB-EF4B-2895F7371AB7">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>BF54FB88-230D-6997-CD69-DD64A4A91005</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7FE8D55-7678-88DF-027C-D971C2212283" referredColumn="71238890-2CBF-DBEF-CACB-49D346B42F13"/>
+</associations>
+</Column>
+<Column name="cena" id="1E621865-3DCC-EFB2-4477-E7949B63C626">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>2BC4CD85-F4C6-3959-1EB7-5BE0E156EAC0</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,2,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_rozp" id="A27DB618-3B4B-20D3-A521-C47331B76F7E">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>02AF09B0-66AE-E72D-9AD8-7DCBCAEFECDB</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_zakon" id="D204967E-28F1-ACE2-A027-9819B7C5DB15">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>A561DE1D-2789-73ED-DF00-9CF8394E782F</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FD76721-565B-25A6-54C4-92BA20D6D05D" name="Karnet_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>77ACA5BC-20A1-680D-B742-D0D9C846B625</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AE19333-1232-7532-EF8D-80DD8F36F661"/>
+<colUsage columnID="EAECBB1C-E0E5-6BAB-EF4B-2895F7371AB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ED7FF7A-2D62-7776-F1FD-0CDBFA2770E4" name="Karnet_Klient_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>1EAD925E-CED6-71FC-10F1-DECEC185CD72</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AE19333-1232-7532-EF8D-80DD8F36F661"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="951DE5E2-D914-562B-F716-381C9CCD1EAE" name="Karnet_Zajecia_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>334ACF46-35E8-B120-567A-792E4811ED7C</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAECBB1C-E0E5-6BAB-EF4B-2895F7371AB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

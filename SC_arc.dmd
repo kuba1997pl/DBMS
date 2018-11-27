@@ -1,8 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SC_arc" id="2C2EFF76-82DD-DFAC-40A0-C37AADD9CEE4" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SC_arc" id="106C025B-E62F-1507-1172-594AC35EE8B4" version="3.5">
 <createdBy>kuba</createdBy>
-<createdTime>2018-11-21 19:06:04 UTC</createdTime>
-<ownerDesignName>SportCentre</ownerDesignName>
+<createdTime>2018-11-27 14:26:07 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>2C2EFF76-82DD-DFAC-40A0-C37AADD9CEE4</designId>
+<designId>106C025B-E62F-1507-1172-594AC35EE8B4</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="2C2EFF76-82DD-DFAC-40A0-C37AADD9CEE4">
+<designStoragePath>/home/kuba/DBMS/SC_arc</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="106C025B-E62F-1507-1172-594AC35EE8B4">
+<designStoragePath>/home/kuba/DBMS/SC_arc</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D483C7C-BC8A-6434-6BA4-26E87A807D94" name="Sala">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>D2968F90-5974-6109-F9DF-3DEB0EE98D96</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_sali" id="DB730EF5-50FF-DCCB-EC84-EA1B49104518">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>10F6F772-5D6E-5D6D-3778-B5D6978650C5</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Obiekt_Sportowy_id_obiektu" id="E00BB4FC-5542-A2FB-EED8-25D202B04DCA">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>54CA5370-5540-B771-50EF-B8547FD295A3</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9737883F-5CAB-363B-2945-5332E3D2AE1F" referredColumn="17BCFC02-F661-BC9C-8427-020C057C1AB8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B144802C-BE97-6DE5-0070-5790E5C50041" name="Sala_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>99633524-E063-71A9-96F0-17F0C7BB7394</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E00BB4FC-5542-A2FB-EED8-25D202B04DCA"/>
+<colUsage columnID="DB730EF5-50FF-DCCB-EC84-EA1B49104518"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD0A53C5-CC80-5C9C-4579-E164E59644A9" name="Sala_Obiekt_Sportowy_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>839C1588-EDA2-98A2-6C5F-FE643693B478</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E00BB4FC-5542-A2FB-EED8-25D202B04DCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFD48A6A-BB33-4DB9-0BA2-A3542CA71032" name="Obiekt_Sportowy">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>4D50B0CB-B764-9DFB-C45C-C5DEF16C1112</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_obiektu" id="17BCFC02-F661-BC9C-8427-020C057C1AB8">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>14A5F75D-4BFA-19F6-0127-98B5781E08C9</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lokalizacja" id="CE424091-1936-091D-448A-060EFEC82C33">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>8772D51B-C540-EF8C-9BB4-39941058B4AC</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="866190C9-0289-39BF-3A5E-CF36AABD2D08">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>466720C8-E651-AED3-6C53-53D84E25AE5B</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typ_obiektu" id="2EBB8B79-E034-5D49-2533-A043C8B50BE6">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>D9764829-2F7C-E81C-B55A-E7110EAA915D</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CD89AA3-E550-B854-18D7-D609DA620415" name="Obiekt_Sportowy_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>210B47CD-75B8-97A2-DB15-5A7625396B0B</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17BCFC02-F661-BC9C-8427-020C057C1AB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="315D7DFD-8EBC-6B14-5F50-824F44A1A4E1" name="Uczestnik">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>84E956AF-3BC9-0CBD-27AA-2176D4CE21B0</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PESEL" id="E2EAE9D8-6D9F-5267-33BE-0CBA8A893823">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>89D3E01F-1C72-5ADC-C569-43C5EAA12C5B</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwisko" id="F45AC594-07F7-88B3-F453-ED26638EB16E">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>7E514067-14CE-CE6D-9A68-AED08D6B62E8</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imie" id="730F3E9C-62D0-C0BC-0D8E-F93253DA56C2">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>1D1F2895-2C0F-19E3-B846-A0A1DBD83139</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oplacony" id="F0C82EDC-C58B-38D9-AC84-843A6587F554">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>124C415B-EDB1-9650-57C4-D0E628E365CD</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="84A0A85B-BEA0-8764-EB3E-26E049E252F6">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:34:45 UTC</createdTime>
+<generatorID>BEC8D55F-3EF7-EF0B-CE70-4C2BAD1AD4BC</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<referedAttribute>47C2AF15-945C-B9A7-C254-EF00F74AE2BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98EE8AAF-422D-23DF-4D7D-BF245287C48E" name="Uczestnik PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>98616A66-5C0B-AC08-B5DD-9DB473E6B2EF</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E2EAE9D8-6D9F-5267-33BE-0CBA8A893823</attributeRef>
+<attributeRef>84A0A85B-BEA0-8764-EB3E-26E049E252F6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

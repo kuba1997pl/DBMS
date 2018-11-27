@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF47D67D-7474-BB35-3AC3-70E717A04126" name="Trener">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>4091C2B0-CAED-5FFF-B360-53C739C923C0</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>99F8A8AB-4FF8-AC6C-B416-3ED333DD6731</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="E9C5F6BC-2924-7361-9FF9-7B27FF02DB93">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>8495C1B4-F286-012F-397E-3A318D056351</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>DBA3DE7F-6164-F265-20BB-05A61CDFC6AA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94048680-76A2-470F-A4DE-592C6AFD6D03" referredColumn="FCC1F1D6-AA6B-7A06-849F-9797FABDC86D"/>
+</associations>
+</Column>
+<Column name="dyscyplina" id="57A0D113-DC00-423A-EE83-8B2A50F114F8">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>F56DE646-A2FA-9DEF-DA3D-27C11F3B9B7A</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>47BD5EE2-911F-8911-D924-FFE394C94B12</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39B86FEC-913E-4BEE-56A5-F2B3B27E2A64" name="Trener_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>8CEAC67E-C38E-5EBE-FC54-11358B4FCE79</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>71C31172-7DEB-5E4D-801A-8E201FAFA25B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9C5F6BC-2924-7361-9FF9-7B27FF02DB93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEB9C0DC-A1A0-380B-D84B-0B1AD97E76EC" name="Trener_Pracownik_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>7582E918-DF01-F163-9043-E1BC592A9392</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9C5F6BC-2924-7361-9FF9-7B27FF02DB93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

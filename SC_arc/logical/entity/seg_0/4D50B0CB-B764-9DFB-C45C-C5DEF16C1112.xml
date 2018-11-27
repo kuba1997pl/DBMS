@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D50B0CB-B764-9DFB-C45C-C5DEF16C1112" name="Obiekt_Sportowy">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>CCCE83A6-7665-6C02-E39E-E1F5F97C7409</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_obiektu" id="14A5F75D-4BFA-19F6-0127-98B5781E08C9">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>9C7C6E87-D363-AA23-D7BD-394F127113C0</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lokalizacja" id="8772D51B-C540-EF8C-9BB4-39941058B4AC">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>E50EDD9B-DA9B-B795-20C2-2D80273CD1EE</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="466720C8-E651-AED3-6C53-53D84E25AE5B">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>84263584-9231-A7A8-9101-5831DDBD5EA6</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typ_obiektu" id="D9764829-2F7C-E81C-B55A-E7110EAA915D">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>B1AA8569-C64E-8DDA-65A4-45CD193645A9</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="210B47CD-75B8-97A2-DB15-5A7625396B0B" name="Obiekt_Sportowy PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>514D9C66-0E59-2342-3ACA-49767BF2D861</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>14A5F75D-4BFA-19F6-0127-98B5781E08C9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

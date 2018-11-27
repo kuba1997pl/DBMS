@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B0462C4-F3D5-0B3A-78A2-3C18508E289A" name="Wyposazenie">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>3DB601E0-DD47-03AE-E1AF-E6AF89062717</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_wyposazenia" id="5E0E7E4C-4FC7-3007-CB44-3712501C8545">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>1977C11D-D93F-78C4-AFEA-FDF38A07B1AB</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="99B220AC-81A9-3A37-EE16-2868FF76CCA8">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>597E0A27-4D04-8378-1BEC-D5FFD54C3735</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dyscyplina" id="07FD7AD0-BC8B-16F2-9BFB-3E2F17DA6172">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>0DE740A4-1743-1F65-1BB0-96AB2768A5A4</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ilosc" id="69D75D42-F700-44CF-AAE4-488C094C8D7C">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>38E65F9B-B76F-2D4E-5736-B47EF89B19F3</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_obiektu" id="C20E8405-C788-696C-0B5F-86027B76632D">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<generatorID>D7AAF717-0096-A01A-717A-BE879A9D0D14</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>7DF6E3EE-03F8-B8F9-8EA0-8D7CFCF6465B</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<referedAttribute>14A5F75D-4BFA-19F6-0127-98B5781E08C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_obiektu1" id="5DAA051D-F34E-1C1F-2566-659F05422021">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<generatorID>FA28BFB2-E32C-B89A-9F22-7C146A7D8D09</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>22BF995C-6FC1-D180-BCD6-18B2AFCD671F</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<referedAttribute>54CA5370-5540-B771-50EF-B8547FD295A3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_sali" id="54600C3C-785D-99DC-0A40-9BDB8FD1C529">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<generatorID>FA28BFB2-E32C-B89A-9F22-7C146A7D8D09</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>DC221766-0BAB-641E-BF8B-FCC46A677629</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<referedAttribute>10F6F772-5D6E-5D6D-3778-B5D6978650C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D6ECB88-ECF8-85CE-E86A-10501125B0BD" name="Wyposazenie PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>B89B2815-51EA-0C83-F62D-7497B7C722CA</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E0E7E4C-4FC7-3007-CB44-3712501C8545</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

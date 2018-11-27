@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="BEC8D55F-3EF7-EF0B-CE70-4C2BAD1AD4BC">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>A00049D5-C969-58F2-A92F-3B9F26764296</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<sourcePk>1631EE6D-2B31-F0A9-7F5D-941DCD456435</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>goszczą</nameOnSource>
+<nameOnTarget>bierze udzial w</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>15058A35-D0A0-390C-17FD-C89CF5B9FABA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>315D7DFD-8EBC-6B14-5F50-824F44A1A4E1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

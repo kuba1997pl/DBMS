@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="15058A35-D0A0-390C-17FD-C89CF5B9FABA" name="Zawody">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>92ABE17D-549A-5375-8539-B8A37930FBB2</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nazwa" id="47C2AF15-945C-B9A7-C254-EF00F74AE2BF">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>F1142925-1F8E-742D-9734-C327C769FF10</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_obiektu" id="5728FB88-0ED5-A1AA-8F91-C46F214A81E8">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<generatorID>93E606C2-1F33-3986-C5C9-895F1BCAE680</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>298E5062-D62E-F522-E9FF-E8DE16EE81D2</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<referedAttribute>14A5F75D-4BFA-19F6-0127-98B5781E08C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data" id="C60F276B-C3F0-BA53-5A29-2652A71981FF">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>7E3FA6C9-D187-281E-EFD1-DB1FCFC374A2</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dyscyplina" id="DEDFD11B-629A-E10B-005C-4D47C7A8A1DB">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>66441E6F-2930-F19D-FAA5-B734439E6700</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oplata_startowa" id="2E0309C8-59AB-FBE3-62D7-CFF5B3135304">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>55878525-C02D-DF33-3B2C-7602D1D27A6C</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1631EE6D-2B31-F0A9-7F5D-941DCD456435" name="Zawody PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>E32E4D5A-6022-F617-5CC1-B72A89C74971</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>47C2AF15-945C-B9A7-C254-EF00F74AE2BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

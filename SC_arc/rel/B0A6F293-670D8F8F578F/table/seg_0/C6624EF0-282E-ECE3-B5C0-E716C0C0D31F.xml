@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6624EF0-282E-ECE3-B5C0-E716C0C0D31F" name="Klient">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>99AB4EE4-1A22-EA3C-BD93-6C4D5B88A260</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>656ADE7A-FE88-FADD-0F17-2EE76EFB4B06</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_klienta" id="5C13D9F6-B238-2869-DFAE-111E1BE16F5F">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>4094E323-3E13-BCBD-5B20-34A78D9AB2AE</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>070D3872-C567-DFAA-1C85-EBA1148343B0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="D7FE5B0D-197F-8C56-2DAE-8997836AA959">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>9E7B0921-14B4-43BC-D45A-CA610E0B5057</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>042BB4BD-18F8-24A2-1511-2B1474FD768C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="D0B527D9-4ABE-DABC-2BAC-503EE157AE79">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>F15678BC-8AA0-556B-4BD6-CF4252CDF026</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>E21A40D2-4A27-2D12-CB68-50FDEA2D78C8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33A0EED1-0A42-110F-7367-31F1707B20E3" name="Klient_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>ED8FF020-E323-754F-0F60-0051A72A48DA</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>1E70C639-58E8-2B2D-A05D-C8724DBB01E4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C13D9F6-B238-2869-DFAE-111E1BE16F5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

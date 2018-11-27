@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2352F5F4-5FC8-49D4-9047-E06B903858CF" name="Pracownik">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>045F7E43-ED49-94A9-4D1A-B21AA5BBAB02</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>CC19671A-89AE-7B94-9549-A6E0269B0D7C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="FCC1F1D6-AA6B-7A06-849F-9797FABDC86D">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>8495C1B4-F286-012F-397E-3A318D056351</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>54F82D60-721F-81BE-A143-0A277D1381C9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="ED412688-5953-701F-1AD5-955BC7EE96E6">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>C03C742F-0CA7-60F2-2FDA-24C10BF63167</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>F52DB3A9-DD6E-A5E3-8807-7515B0034214</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="0A1333FD-AC20-6128-652F-799AF707D94F">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>EB646EF9-AC7A-954F-FA16-01A06A35D7E0</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>268C4229-3D04-C05B-57D3-35017D96AFA3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="funkcja" id="EF628902-1E06-5946-613A-84CFE0D17870">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>8234E4D2-AAD0-F914-F2A3-0A08A07DB87F</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>D207197C-9D58-DAFE-A2B0-EB37DB66AE8C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91211A1E-459B-842E-2BBF-7FFF993AF87C" name="Pracownik_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>8CEAC67E-C38E-5EBE-FC54-11358B4FCE79</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>A9F17A2E-AD9C-B904-311D-DFE9ABED4F16</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCC1F1D6-AA6B-7A06-849F-9797FABDC86D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

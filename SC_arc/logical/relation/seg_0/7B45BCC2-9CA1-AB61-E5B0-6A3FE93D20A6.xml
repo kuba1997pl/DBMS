@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_10" directorySegmentName="seg_0" id="7B45BCC2-9CA1-AB61-E5B0-6A3FE93D20A6">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:32 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>2EC685FB-CAEF-74CE-FF4F-B11B869501DC</importedID>
+<engineerTo>
+<item key="B0A6F293-8B0C-D514-40BF-670D8F8F578F" value="true"/>
+<item key="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" value="true"/>
+</engineerTo>
+<sourcePk>99633524-E063-71A9-96F0-17F0C7BB7394</sourcePk>
+<arc>805D231F-1DA4-2891-2436-95D877268B0D</arc>
+<identifying>false</identifying>
+<nameOnSource>jest miejscem dla</nameOnSource>
+<nameOnTarget>odbywają się w</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2968F90-5974-6109-F9DF-3DEB0EE98D96</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E72AD4F-BD10-01C1-8BBF-749FAE118218</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

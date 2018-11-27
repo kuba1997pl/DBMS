@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F70AEEB-4B07-43F8-6C74-77A40A141231" containerWithKeyObject="357FC3F6-D152-7DCA-7B94-FCA7384B0B9E" localFKIndex="F2FF969C-EAFC-9FBB-DB2E-E791A2E4E92E" name="Karnet_Klient_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>1EAD925E-CED6-71FC-10F1-DECEC185CD72</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>091E84D1-CDBA-8714-4D23-8CFC6B86EED7</importedID>
+<referredTableLongName>Klient</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C6624EF0-282E-ECE3-B5C0-E716C0C0D31F</referredTableID>
+<keyObject>33A0EED1-0A42-110F-7367-31F1707B20E3</keyObject>
+<referredKeyID>33A0EED1-0A42-110F-7367-31F1707B20E3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_klienta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

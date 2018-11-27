@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E48AA7E-46C9-9FEB-3C6C-F61B90A5AA5F" name="Zajecia">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>6E72AD4F-BD10-01C1-8BBF-749FAE118218</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>9934F2DE-8E5D-A032-C73B-1875C0C60EFC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zajec" id="217157A4-FA08-7477-EA38-BF17DA49441F">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>DA58BE05-7747-FE67-47B6-D567C0D10BE7</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>4665893B-9177-3016-ACBF-7BFF1E2DF6ED</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dzien_tygodnia" id="5A29F692-742F-67BC-F7D9-42961C310D77">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>0E2759A0-628E-93C8-8E43-41F8B4306ACB</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>B8A5B83A-85BC-5F92-EAD0-9E2BAFC35E38</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzina_rozp" id="11695479-9C96-F566-D3B8-6A4F709DE3B6">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>57FFF6BC-F019-7D83-2B72-2EF0B9DACEA5</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>5692C83D-F655-8D19-48C4-DED9D0A84634</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzina_zakon" id="FA0463CE-FBCA-80EC-6C68-6DAA73DAD6AC">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>E4FFBA5D-0349-1DF2-7E49-6294C49E7557</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>3758E06C-4636-F6AC-D2A8-AF78F39FF12E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dyscyplina" id="8A9B26E5-1EE3-EB4B-E63A-422164F904DB">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>96490A4B-AAF9-3865-5A31-E5EE497E2DDA</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>6021558C-467C-6600-B8E4-EB2F4B18FB5F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cena" id="A73ED09F-D3EA-580D-BC8B-A64DF914DF2C">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>A09FB133-1BF8-B104-24C8-392809EB131B</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>91E4C4DF-6347-55B3-D882-3DF08CADA378</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Trener_PESEL" id="1ABF3038-B55B-C096-1914-57C28FB564B1">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>3D57BF28-69EE-3228-AA4F-6D2288DA2D4C</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>9896B673-0710-488E-AB83-212AB138742A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C41A5D-BC33-31A1-C729-BE9DD32988A8" referredColumn="E9C5F6BC-2924-7361-9FF9-7B27FF02DB93"/>
+</associations>
+</Column>
+<Column name="Obiekt_Sportowy_id_obiektu" id="D670B61D-61F3-6819-7582-D5C573EF3799">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>56A18FE6-2DF8-9D1A-8CBA-6A5ADC3F6891</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>A8DAF131-503D-4A06-FD68-21A78F43FF4F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A13CDE45-7266-349E-65A5-4447590A6DFC" referredColumn="3DE479AF-F6C4-7855-8E35-C075F0229ED7"/>
+</associations>
+</Column>
+<Column name="Sala_Obiekt_Sportowy_id_ob" id="443E0A41-C9BC-C460-F4F9-C1F86E357329">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>363D20D2-29B2-38D1-3796-DCC86900B1E2</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>29638C19-A594-5CE3-B04F-CD2AAE452FA4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1186B78-B72B-F7CC-2BBA-651C6BFE88D5" referredColumn="A94DF532-6C0A-C46E-79C5-191D96C3516A"/>
+</associations>
+</Column>
+<Column name="Sala_nr_sali" id="282F8BBA-6973-6D11-4AB7-0518FCCBE763">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>4B456A22-3813-8C2A-EDF7-53DB20969D0D</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>0FECEB3E-576E-3218-D16E-6741BD482752</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1186B78-B72B-F7CC-2BBA-651C6BFE88D5" referredColumn="3FBE88B9-BF65-691B-FED6-1788087CB3A3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B431C29-BB8B-E66D-51D4-66C381DD2BE7" name="Zajecia_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>DF4F479A-C678-206E-D589-87CB3661B003</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>BC211113-D90B-A52E-4050-D3DD344CD87D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="217157A4-FA08-7477-EA38-BF17DA49441F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B2BFD00-55C3-71E3-2460-7740A4495D97" name="Zajecia_Trener_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>EF302B73-80D7-9B29-E5BA-DE028BA85321</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ABF3038-B55B-C096-1914-57C28FB564B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BB63E6D-BFFD-3589-AE5B-7A48B08A62AA" name="Zajecia_Obiekt_Sportowy_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>69EC08CC-E3C2-11A4-B5E3-1F2A7F38CB6A</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D670B61D-61F3-6819-7582-D5C573EF3799"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD9976E3-6A72-A59B-9E6E-4687A802C0B0" name="Zajecia_Sala_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>7B45BCC2-9CA1-AB61-E5B0-6A3FE93D20A6</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="443E0A41-C9BC-C460-F4F9-C1F86E357329"/>
+<colUsage columnID="282F8BBA-6973-6D11-4AB7-0518FCCBE763"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

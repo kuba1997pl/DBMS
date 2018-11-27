@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A750BDA4-1B5A-31F6-5E16-9850B1D11762" name="Trener">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>4091C2B0-CAED-5FFF-B360-53C739C923C0</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL" id="FC35059F-93EA-9BEA-10DC-B419817AFC44">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>8495C1B4-F286-012F-397E-3A318D056351</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1ADCCE5-9434-04ED-416C-35DB614000FF" referredColumn="ECA603A9-88C1-8183-7C62-EDE0CA6C0912"/>
+</associations>
+</Column>
+<Column name="dyscyplina" id="E77DDDA7-ADC5-E3CD-D1ED-D53391227431">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>F56DE646-A2FA-9DEF-DA3D-27C11F3B9B7A</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3AC1F27-EA79-7030-FDF0-4FCE5BFBDA9E" name="Trener_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>8CEAC67E-C38E-5EBE-FC54-11358B4FCE79</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC35059F-93EA-9BEA-10DC-B419817AFC44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED1152DA-968E-8D61-C3B9-22525E5442F9" name="Trener_Pracownik_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:32:56 UTC</createdTime>
+<generatorID>7582E918-DF01-F163-9043-E1BC592A9392</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC35059F-93EA-9BEA-10DC-B419817AFC44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

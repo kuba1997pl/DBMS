@@ -1,3 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <ExtendedMap class="oracle.dbtools.crest.model.xtdmapping.ExtendedMap">
+<mappings itemClass="oracle.dbtools.crest.model.xtdmapping.XtdMapping">
+<Mapping id="EF8C4DF3-080894259063E32EFAEB-C1D11602680A" delID="EF8C4DF3-3B97-1D2D-5FFC-080894259063" oCont="315D7DFD-8EBC-6B14-5F50-824F44A1A4E1" oDP="391E7487-B700-8F57-DDD8-FC2C329F92C4" oID="EF8C4DF3-3B97-1D2D-5FFC-080894259063" tCont="AE11C557-4605-EBD8-E001-D0F7DE6A2B65" tDP="B6BDD42C-4EE8-FD23-522C-6BCA85EC73E5" tID="E32EFAEB-819A-C9E3-B529-C1D11602680A">
+</Mapping>
+</mappings>
 </ExtendedMap>

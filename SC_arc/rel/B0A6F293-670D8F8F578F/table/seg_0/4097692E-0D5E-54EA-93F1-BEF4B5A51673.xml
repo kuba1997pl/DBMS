@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4097692E-0D5E-54EA-93F1-BEF4B5A51673" name="Relation_3">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>B1A29649-DCED-1D28-4267-23591BD51EFE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Zawody_nazwa" id="4C6D8357-EECC-9090-FA2E-B1C265F333B8">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>18B53947-48DD-C419-1163-115F76923FA2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5154DC81-F2AA-7447-EF7F-50CBE72AAA77" referredColumn="27ADE53B-11F4-65A8-C5E4-F921EDD69B2D"/>
+</associations>
+</Column>
+<Column name="Uczestnik_PESEL" id="6E96CB83-FF50-B7AA-5711-84DB66F876CA">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>CE48BA1D-B8F5-D086-CF3B-717101E289E5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8BFF9CC-43E1-04C2-0A11-E5EE741673E8" referredColumn="EE6CF54B-6FE2-3F42-9CF4-5AFE262B1676"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="966793ED-D6FF-FC33-71C4-D6AD39088518" name="Relation_3_PK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>9280B4C2-DA2B-A2E8-244F-2D0649BB9B0F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C6D8357-EECC-9090-FA2E-B1C265F333B8"/>
+<colUsage columnID="6E96CB83-FF50-B7AA-5711-84DB66F876CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F8E3C92-9932-A2DA-304A-CD4438970E95" name="Relation_3_Uczestnik_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>BEC8D55F-3EF7-EF0B-CE70-4C2BAD1AD4BC</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E96CB83-FF50-B7AA-5711-84DB66F876CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FE5F122-4A37-2D6A-C667-3EA29BA6A8A8" name="Relation_3_Zawody_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>BEC8D55F-3EF7-EF0B-CE70-4C2BAD1AD4BC</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C6D8357-EECC-9090-FA2E-B1C265F333B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

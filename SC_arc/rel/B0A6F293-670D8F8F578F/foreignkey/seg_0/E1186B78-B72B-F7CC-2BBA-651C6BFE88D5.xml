@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1186B78-B72B-F7CC-2BBA-651C6BFE88D5" containerWithKeyObject="4E48AA7E-46C9-9FEB-3C6C-F61B90A5AA5F" localFKIndex="BD9976E3-6A72-A59B-9E6E-4687A802C0B0" name="Zajecia_Sala_FK">
+<createdBy>kuba</createdBy>
+<createdTime>2018-11-27 14:27:33 UTC</createdTime>
+<generatorID>7B45BCC2-9CA1-AB61-E5B0-6A3FE93D20A6</generatorID>
+<ownerDesignName>SC_arc</ownerDesignName>
+<importedID>2864DFD1-B15A-42ED-DDDE-84E63B279968</importedID>
+<referredTableLongName>Sala</referredTableLongName>
+<arc>2F5D70A1-F0F1-E476-C6CD-199242C57772</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9DCDCF48-8B30-23A4-1F20-CC376D3FB769</referredTableID>
+<keyObject>6F4F5787-10A5-DAF2-28EF-84D86F14002A</keyObject>
+<referredKeyID>6F4F5787-10A5-DAF2-28EF-84D86F14002A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Obiekt_Sportowy_id_obiektu,nr_sali</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
