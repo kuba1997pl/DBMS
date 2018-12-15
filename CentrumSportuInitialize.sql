@@ -5,6 +5,8 @@
 --alter table zajecia modify godzina_rozp date;
 --alter table zajecia modify godzina_zakon date;
 --alter table zawody modify oplata_startowa number(6,2);
+-- ZMIENIONO JUŻ W KODZIE INICJALIZUJĄCYM RELACJE!
+
 create SEQUENCE seq_id_obiektu minvalue 0 start with 0 increment by 1;
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.nextval, 'ul. Piotrowo 4, 61-138, Poznan', 'Centrum Sportu Politechniki Poznanskiej', 'budynek');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 1', 'kort tenisowy');
@@ -19,14 +21,14 @@ insert into sala values ( 'Hala sportowa', 1);
 insert into sala values ( 'Silownia', 1);
 insert into sala values ( 'Sala fitness', 1);
 insert into sala values ( 'Kregielnia', 1);
-insert into pracownik values ( '82110478194', 'Kowalski', 'Adam', 'Trener');
+insert into pracownik values ( '82110478194', 'Kowalski', 'Adam', 'Trener', 2000);
 insert into trener values ( '82110478194', 'Squash');
-insert into pracownik values ( '76071319471', 'Nowak', 'Wojciech', 'Trener');
+insert into pracownik values ( '76071319471', 'Nowak', 'Wojciech', 'Trener', 3000);
 insert into trener values ( '76071319471', 'Tenis');
-insert into pracownik values ( '68063073877', 'Tomasz', 'Borski', 'Trener');
+insert into pracownik values ( '68063073877', 'Tomasz', 'Borski', 'Trener', 4000);
 insert into trener values ( '68063073877', 'Silownia');
-insert into pracownik values ( '60031874813', 'Grazyna', 'Karp', 'Sprzataczka');
-insert into pracownik values ( '78003287311', 'Magda', 'Nowicka', 'Portierka');
+insert into pracownik values ( '60031874813', 'Grazyna', 'Karp', 'Sprzataczka', 1800);
+insert into pracownik values ( '78003287311', 'Magda', 'Nowicka', 'Portierka', 1900);
 create SEQUENCE seq_id_wyposazenia minvalue 0 start with 0 increment by 1;
 insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Rakiety do squasha', 'Squash', '10', 1, NULL, NULL );
 insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Sprzet w silowni', NULL, NULL, NULL, 1, 'Silownia' );
@@ -53,8 +55,8 @@ insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
 
 */
 
-
 /*
+
 --DROPS ALL TABLES AND SEQUENCES
 BEGIN
 
@@ -76,7 +78,7 @@ END;
 CREATE TABLE karnet (
     klient_id_klienta   INTEGER NOT NULL,
     zajecia_id_zajec    INTEGER NOT NULL,
-    cena                FLOAT(2) NOT NULL,
+    cena                NUMBER(6,2) NOT NULL,
     data_rozp           DATE NOT NULL,
     data_zakon          DATE NOT NULL
 );
@@ -105,7 +107,8 @@ CREATE TABLE pracownik (
     pesel      VARCHAR2(11) NOT NULL,
     nazwisko   VARCHAR2(50) NOT NULL,
     imie       VARCHAR2(50) NOT NULL,
-    funkcja    VARCHAR2(50) NOT NULL
+    funkcja    VARCHAR2(50) NOT NULL,
+    placa      NUMBER(7,2)  NOT NULL
 );
 
 ALTER TABLE pracownik ADD CONSTRAINT pracownik_pk PRIMARY KEY ( pesel );
@@ -171,10 +174,10 @@ ALTER TABLE wyposazenie ADD CONSTRAINT wyposazenie_pk PRIMARY KEY ( id_wyposazen
 CREATE TABLE zajecia (
     id_zajec                     INTEGER NOT NULL,
     dzien_tygodnia               VARCHAR2(20) NOT NULL,
-    godzina_rozp                 TIMESTAMP NOT NULL,
-    godzina_zakon                TIMESTAMP NOT NULL,
+    godzina_rozp                 DATE NOT NULL,
+    godzina_zakon                DATE NOT NULL,
     dyscyplina                   VARCHAR2(50) NOT NULL,
-    cena                         FLOAT(2) NOT NULL,
+    cena                         NUMBER(6,2) NOT NULL,
     trener_pesel                 VARCHAR2(11),
     obiekt_sportowy_id_obiektu   INTEGER,
     sala_obiekt_sportowy_id_ob   INTEGER,
@@ -201,7 +204,7 @@ CREATE TABLE zawody (
     nazwa                        VARCHAR2(50) NOT NULL,
     data                         DATE NOT NULL,
     dyscyplina                   VARCHAR2(50) NOT NULL,
-    oplata_startowa              FLOAT(2),
+    oplata_startowa              NUMBER(6,2),
     obiekt_sportowy_id_obiektu   INTEGER NOT NULL
 );
 
@@ -259,4 +262,27 @@ ALTER TABLE zawody
     ADD CONSTRAINT zawody_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
         REFERENCES obiekt_sportowy ( id_obiektu );
         
+*/
+
+/*
+CREATE OR REPLACE FUNCTION podatek (p_id_prac IN NUMBER) RETURN NUMBER IS
+    CURSOR c_pracownik IS
+        SELECT * FROM pracownicy
+        WHERE id_prac = p_id_prac;
+    v_pracownik pracownicy%ROWTYPE;
+    v_roczne_zarobki NUMBER;
+    v_podatek NUMBER;
+    BEGIN
+    OPEN c_pracownik;
+    FETCH c_pracownik INTO v_pracownik;
+    CLOSE c_pracownik;
+v_roczne_zarobki := 12 * v_pracownik.placa_pod +
+NVL(v_pracownik.placa_dod, 0);
+IF (v_roczne_zarobki > 5000) THEN v_podatek := 0.40 * v_roczne_zarobki;
+ELSIF (v_roczne_zarobki > 3000) THEN v_podatek := 0.30 * v_roczne_zarobki;
+ELSE v_podatek := 0.19 * v_roczne_zarobki;
+END IF;
+RETURN v_podatek;
+END podatek;
+/
 */
