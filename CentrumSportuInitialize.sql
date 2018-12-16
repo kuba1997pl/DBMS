@@ -1,12 +1,8 @@
-/*
---INITIALIZES SAMPLE DATA
---alter table karnet modify cena number(6,2);
---alter zajecia karnet modify cena number(6,2);
---alter table zajecia modify godzina_rozp date;
---alter table zajecia modify godzina_zakon date;
---alter table zawody modify oplata_startowa number(6,2);
--- ZMIENIONO JUŻ W KODZIE INICJALIZUJĄCYM RELACJE!
 
+-- TO DO
+-- Dodac ograniczenie na wstawianie zajec, ktore juz w danym obiekcie sie o danym czasie odbywaja
+-- 
+/*
 create SEQUENCE seq_id_obiektu minvalue 0 start with 0 increment by 1;
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.nextval, 'ul. Piotrowo 4, 61-138, Poznan', 'Centrum Sportu Politechniki Poznanskiej', 'budynek');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 1', 'kort tenisowy');
@@ -21,12 +17,17 @@ insert into sala values ( 'Hala sportowa', 1);
 insert into sala values ( 'Silownia', 1);
 insert into sala values ( 'Sala fitness', 1);
 insert into sala values ( 'Kregielnia', 1);
+insert into sala values ( 'Judo 1', 0);
+
 insert into pracownik values ( '82110478194', 'Kowalski', 'Adam', 'Trener', 2000);
 insert into trener values ( '82110478194', 'Squash');
 insert into pracownik values ( '76071319471', 'Nowak', 'Wojciech', 'Trener', 3000);
 insert into trener values ( '76071319471', 'Tenis');
 insert into pracownik values ( '68063073877', 'Tomasz', 'Borski', 'Trener', 4000);
 insert into trener values ( '68063073877', 'Silownia');
+insert into pracownik values ( '92120107827', 'Jan', 'Majchrzak', 'Trener', 4500);
+insert into trener values ( '92120107827', 'BJJ');
+
 insert into pracownik values ( '60031874813', 'Grazyna', 'Karp', 'Sprzataczka', 1800);
 insert into pracownik values ( '78003287311', 'Magda', 'Nowicka', 'Portierka', 1900);
 create SEQUENCE seq_id_wyposazenia minvalue 0 start with 0 increment by 1;
@@ -45,6 +46,11 @@ insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('18:00:0
 insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('19:00:00','HH24:MI:SS'), to_timestamp('21:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
 insert into zajecia values (seq_id_zajec.nextval, 'piatek', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('20:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
 insert into zajecia values (seq_id_zajec.nextval, 'wtorek', to_timestamp('9:00:00','HH24:MI:SS'), to_timestamp('11:00:00','HH24:MI:SS'), 'Tenis', '70', '76071319471', 3, NULL, NULL);
+insert into zajecia values (seq_id_zajec.nextval, 'czwartek', to_timestamp('8:00:00','HH24:MI:SS'), to_timestamp('10:00:00','HH24:MI:SS'), 'Tenis', '65', NULL, 3, NULL, NULL);
+insert into zajecia values (seq_id_zajec.nextval, 'czwartek', to_timestamp('8:00:00','HH24:MI:SS'), to_timestamp('10:00:00','HH24:MI:SS'), 'Tenis', '65', NULL, 3, NULL, NULL);
+insert into zajecia values (seq_id_zajec.nextval, 'sobota', to_timestamp('10:00:00','HH24:MI:SS'), to_timestamp('11:00:00','HH24:MI:SS'), 'BJJ', '50', '92120107827', NULL, 0, 'Judo 1');
+
+/*
 insert into karnet values (4, 1, 275.50, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (3, 2, 245.04, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 3, 210, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
@@ -52,8 +58,8 @@ insert into karnet values (1, 1, 180.5, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_D
 insert into uczestnik values ('89081887811', 'Bury', 'Hubert', 0);
 insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
 insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
-
 */
+
 
 /*
 
@@ -263,26 +269,56 @@ ALTER TABLE zawody
         REFERENCES obiekt_sportowy ( id_obiektu );
         
 */
-
 /*
-CREATE OR REPLACE FUNCTION podatek (p_id_prac IN NUMBER) RETURN NUMBER IS
+CREATE OR REPLACE FUNCTION ilu_tren_w_obiekcie(id_obiektu IN INTEGER) RETURN NUMBER IS
+    CURSOR c_w_obiekcie IS
+        SELECT COUNT(DISTINCT(trener_pesel)) 
+        FROM zajecia
+        WHERE obiekt_sportowy_id_obiektu = id_obiektu;
+    CURSOR c_w_sali IS 
+        SELECT COUNT(DISTINCT(trener_pesel)) 
+        FROM zajecia
+        WHERE sala_obiekt_sportowy_id_ob = id_obiektu;
+    w_obiekcie NUMBER;
+    w_sali NUMBER;
+    sumarycznie NUMBER;
+    BEGIN
+        OPEN c_w_obiekcie;
+        FETCH c_w_obiekcie INTO w_obiekcie;
+        CLOSE c_w_obiekcie;
+        OPEN c_w_sali;
+        FETCH c_w_sali INTO w_sali;
+        CLOSE c_w_sali;
+        sumarycznie := w_sali + w_obiekcie;
+        RETURN sumarycznie;
+    END ilu_tren_w_obiekcie;
+/
+
+CREATE OR REPLACE FUNCTION podatek (PESEL_pr IN STRING) RETURN NUMBER IS
     CURSOR c_pracownik IS
-        SELECT * FROM pracownicy
-        WHERE id_prac = p_id_prac;
-    v_pracownik pracownicy%ROWTYPE;
+        SELECT * FROM pracownik
+        WHERE PESEL = PESEL_pr;
+    v_pracownik pracownik%ROWTYPE;
     v_roczne_zarobki NUMBER;
     v_podatek NUMBER;
     BEGIN
-    OPEN c_pracownik;
-    FETCH c_pracownik INTO v_pracownik;
-    CLOSE c_pracownik;
-v_roczne_zarobki := 12 * v_pracownik.placa_pod +
-NVL(v_pracownik.placa_dod, 0);
-IF (v_roczne_zarobki > 5000) THEN v_podatek := 0.40 * v_roczne_zarobki;
-ELSIF (v_roczne_zarobki > 3000) THEN v_podatek := 0.30 * v_roczne_zarobki;
-ELSE v_podatek := 0.19 * v_roczne_zarobki;
-END IF;
-RETURN v_podatek;
-END podatek;
+        OPEN c_pracownik;
+        FETCH c_pracownik INTO v_pracownik;
+        CLOSE c_pracownik;
+        v_roczne_zarobki := 12 * v_pracownik.placa;
+        IF (v_roczne_zarobki < 8000) THEN v_podatek := 0;
+        ELSIF (v_roczne_zarobki BETWEEN 8000 AND 85528) THEN v_podatek := 0.18 * v_roczne_zarobki;  
+        ELSE v_podatek := 15395.04 + 0.32 * (v_roczne_zarobki-85528);
+        END IF;
+        RETURN v_podatek;
+    END podatek;
 /
+
+CREATE OR REPLACE PROCEDURE usun_stare_karnety IS
+BEGIN
+    DELETE FROM karnet
+    WHERE data_zakon < CURRENT_DATE;
+END usun_stare_karnety;
+/
+
 */
