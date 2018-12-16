@@ -321,4 +321,16 @@ BEGIN
 END usun_stare_karnety;
 /
 
+CREATE INDEX wyposazenie_idx ON wyposazenie(dyscyplina);
+CREATE INDEX uczestnik_oplacony_idx ON uczestnik(oplacony);
+CREATE INDEX klient_idx ON klient(nazwisko, imie);
+CREATE INDEX uczestnik_nazwisko_idx ON uczestnik(nazwisko, imie);
+CREATE INDEX obiekt_idx ON obiekt_sportowy(nazwa);
+CREATE INDEX trener_idx ON trener(dyscyplina);
+CREATE INDEX zajecia_idx ON zajecia(dyscyplina);
+
+-- indeksy poniżej zakładane automatycznie
+--CREATE INDEX karnet_idx ON karnet(klient_id_klienta, zajecia_id_zajec);
+--CREATE INDEX prac_idx ON pracownik(PESEL);
+
 */
