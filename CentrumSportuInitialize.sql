@@ -4,60 +4,84 @@
 -- 
 /*
 create SEQUENCE seq_id_obiektu minvalue 0 start with 0 increment by 1;
-insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.nextval, 'ul. Piotrowo 4, 61-138, Poznan', 'Centrum Sportu Politechniki Poznanskiej', 'budynek');
+insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.nextval, 'ul. Piotrowo 4, 61-138, Poznan', 'Centrum Sportu Politechniki Poznanskiej', 'kompleks sportowy');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 1', 'kort tenisowy');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 2', 'kort tenisowy');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Kort tenisowy 3', 'kort tenisowy');
 insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Piotrowo 4, 61-138, Poznan', 'Boisko do pilki noznej', 'boisko do pilki noznej');
-insert into sala values ( 'Squash 1', 1);
-insert into sala values ( 'Squash 2', 1);
-insert into sala values ( 'Squash 3', 1);
-insert into sala values ( 'Squash 4', 1);
-insert into sala values ( 'Hala sportowa', 1);
-insert into sala values ( 'Silownia', 1);
-insert into sala values ( 'Sala fitness', 1);
-insert into sala values ( 'Kregielnia', 1);
-insert into sala values ( 'Judo 1', 0);
+insert into OBIEKT_SPORTOWY values ( SEQ_ID_OBIEKTU.NEXTVAL, 'ul. Jana Pawła II 28, 61-138, Poznan', 'Siłownia DS1', 'siłownia');
+
+insert into sala values ( 'Squash 1', 0);
+insert into sala values ( 'Squash 2', 0);
+insert into sala values ( 'Squash 3', 0);
+insert into sala values ( 'Squash 4', 0);
+insert into sala values ( 'Hala sportowa', 0);
+insert into sala values ( 'Silownia', 0);
+insert into sala values ( 'Sala fitness', 0);
+insert into sala values ( 'Kregielnia', 0);
+insert into sala values ( 'Judo', 0);
+insert into sala values ( 'Sala taneczna', 0);
 
 insert into pracownik values ( '82110478194', 'Kowalski', 'Adam', 'Trener', 2000);
 insert into trener values ( '82110478194', 'Squash');
 insert into pracownik values ( '76071319471', 'Nowak', 'Wojciech', 'Trener', 3000);
 insert into trener values ( '76071319471', 'Tenis');
 insert into pracownik values ( '68063073877', 'Tomasz', 'Borski', 'Trener', 4000);
-insert into trener values ( '68063073877', 'Silownia');
-insert into pracownik values ( '92120107827', 'Jan', 'Majchrzak', 'Trener', 4500);
-insert into trener values ( '92120107827', 'BJJ');
+insert into trener values ( '68063073877', 'Siłownia');
+insert into pracownik values ( '92120107827', 'Majchrzak', 'Jan', 'Trener', 4500);
+insert into trener values ( '92120107827', 'Judo');
+insert into pracownik values ( '85032701923', 'Zdzisław', 'Kmieciak', 'Trener', 3500);
+insert into trener values ( '85032701923', 'Taniec towarzyski');
+insert into pracownik values ( '73110189234', 'Andrzejewska', 'Anna', 'Trener', 2900);
+insert into trener values ( '73110189234', 'Siatkówka');
+insert into pracownik values ( '81031201242', 'Chojnacka', 'Kamila', 'Trener', 4200);
+insert into trener values ( '81031201242', 'Judo');
+insert into pracownik values ( '71052310923', 'Nawałka', 'Adam', 'Trener', 8000);
+insert into trener values ( '71052310923', 'Piłka nożna');
+insert into pracownik values ( '83071401923', 'Banaszak', 'Katarzyna', 'Trener', 3700);
+insert into trener values ( '83071401923', 'Taniec towarzyski');
 
-insert into pracownik values ( '60031874813', 'Grazyna', 'Karp', 'Sprzataczka', 1800);
-insert into pracownik values ( '78003287311', 'Magda', 'Nowicka', 'Portierka', 1900);
+insert into pracownik values ( '60031874813', 'Karp','Grazyna',  'Sprzataczka', 1800);
+insert into pracownik values ( '78003287311', 'Nowicka', 'Magda', 'Portierka', 1900);
+insert into pracownik values ( '53022819821', 'Wąs', 'Grzegorz', 'Portier', 1900);
+insert into pracownik values ( '69042712918', 'Szmyt', 'Antoni', 'Dyrektor', 10300);
+insert into pracownik values ( '82120134982', 'Nowak', 'Ilona', 'Księgowa', 7200);
+
 create SEQUENCE seq_id_wyposazenia minvalue 0 start with 0 increment by 1;
-insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Rakiety do squasha', 'Squash', '10', 1, NULL, NULL );
-insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Sprzet w silowni', NULL, NULL, NULL, 1, 'Silownia' );
-insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Pilka gimnastyczna', 'Gimnastyka', 5, NULL, 1, 'Sala fitness' );
+insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Rakiety do squasha', 'Squash', '10', 0, NULL, NULL );
+insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Sprzet w silowni', NULL, NULL, NULL, 0, 'Silownia' );
+insert into wyposazenie values ( seq_id_wyposazenia.nextval, 'Pilka gimnastyczna', 'Gimnastyka', 5, NULL, 0, 'Sala fitness' );
+
 create SEQUENCE seq_id_klienta minvalue 0 start with 0 increment by 1;
 insert into klient values (seq_id_klienta.nextval, 'Igor', 'Matecki');
 insert into klient values (seq_id_klienta.nextval, 'Ala', 'Kolot');
 insert into klient values (seq_id_klienta.nextval, 'Andrzej', 'Bakat');
 insert into klient values (seq_id_klienta.nextval, 'Piotr', 'Krupa');
 insert into klient values (seq_id_klienta.nextval, 'Konrad', 'Tyma');
+
 create SEQUENCE seq_id_zajec minvalue 0 start with 0 increment by 1;
-insert into zajecia values (seq_id_zajec.nextval, 'poniedzialek', to_timestamp('12:00:00','HH24:MI:SS'), to_timestamp('13:00:00','HH24:MI:SS'), 'Silownia', '30', '68063073877', NULL, 1, 'Silownia');
-insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('19:00:00','HH24:MI:SS'), 'Silownia', '40', '68063073877', NULL, 1, 'Silownia');
-insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('19:00:00','HH24:MI:SS'), to_timestamp('21:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
-insert into zajecia values (seq_id_zajec.nextval, 'piatek', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('20:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 1, 'Squash 1');
+insert into zajecia values (seq_id_zajec.nextval, 'poniedzialek', to_timestamp('12:00:00','HH24:MI:SS'), to_timestamp('13:00:00','HH24:MI:SS'), 'Silownia', '30', '68063073877', NULL, 0, 'Silownia');
+insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('19:00:00','HH24:MI:SS'), 'Silownia', '40', '68063073877', NULL, 0, 'Silownia');
+insert into zajecia values (seq_id_zajec.nextval, 'sroda', to_timestamp('19:00:00','HH24:MI:SS'), to_timestamp('21:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 0, 'Squash 1');
+insert into zajecia values (seq_id_zajec.nextval, 'piatek', to_timestamp('18:00:00','HH24:MI:SS'), to_timestamp('20:00:00','HH24:MI:SS'), 'Squash', '50', '82110478194', NULL, 0, 'Squash 1');
 insert into zajecia values (seq_id_zajec.nextval, 'wtorek', to_timestamp('9:00:00','HH24:MI:SS'), to_timestamp('11:00:00','HH24:MI:SS'), 'Tenis', '70', '76071319471', 3, NULL, NULL);
 insert into zajecia values (seq_id_zajec.nextval, 'czwartek', to_timestamp('8:00:00','HH24:MI:SS'), to_timestamp('10:00:00','HH24:MI:SS'), 'Tenis', '65', NULL, 3, NULL, NULL);
 insert into zajecia values (seq_id_zajec.nextval, 'czwartek', to_timestamp('8:00:00','HH24:MI:SS'), to_timestamp('10:00:00','HH24:MI:SS'), 'Tenis', '65', NULL, 3, NULL, NULL);
 insert into zajecia values (seq_id_zajec.nextval, 'sobota', to_timestamp('10:00:00','HH24:MI:SS'), to_timestamp('11:00:00','HH24:MI:SS'), 'BJJ', '50', '92120107827', NULL, 0, 'Judo 1');
 
-/*
+insert into zawody values('Mistrzostwa PP w Judo', TO_DATE('01-12-2018','DD-MM-YYYY'), 'Judo', 50, 0);
+insert into zawody values('Mistrzostwa Sołectwa Świniec w Tenisie Ziemnym',TO_DATE('01-07-2019','DD-MM-YYYY'), 'Tenis', '80', 1);
+
 insert into karnet values (4, 1, 275.50, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (3, 2, 245.04, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 3, 210, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 1, 180.5, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
+
 insert into uczestnik values ('89081887811', 'Bury', 'Hubert', 0);
 insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
 insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
+insert into uczestnik values ('92032384671', 'Mania', 'Jakub', 1);
+
 */
 
 
@@ -268,8 +292,7 @@ ALTER TABLE zawody
     ADD CONSTRAINT zawody_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
         REFERENCES obiekt_sportowy ( id_obiektu );
         
-*/
-/*
+
 CREATE OR REPLACE FUNCTION ilu_tren_w_obiekcie(id_obiektu IN INTEGER) RETURN NUMBER IS
     CURSOR c_w_obiekcie IS
         SELECT COUNT(DISTINCT(trener_pesel)) 
@@ -332,5 +355,4 @@ CREATE INDEX zajecia_idx ON zajecia(dyscyplina);
 -- indeksy poniżej zakładane automatycznie
 --CREATE INDEX karnet_idx ON karnet(klient_id_klienta, zajecia_id_zajec);
 --CREATE INDEX prac_idx ON pracownik(PESEL);
-
 */
