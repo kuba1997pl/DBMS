@@ -2,8 +2,8 @@
 -- TO DO
 -- Dodac ograniczenie na wstawianie zajec, ktore juz w danym obiekcie sie o danym czasie odbywaja
 -- 
-
 /*
+
 --DROP ALL SEQUENCES
 BEGIN
   --Bye Sequences!
@@ -58,6 +58,7 @@ BEGIN
    END LOOP;
 END;
 /
+
 */
 
 CREATE TABLE karnet (
@@ -327,7 +328,6 @@ END usun_stare_karnety;
 --/
 
 
-
 CREATE INDEX wyposazenie_idx ON wyposazenie(dyscyplina);
 CREATE INDEX uczestnik_oplacony_idx ON uczestnik(oplacony);
 CREATE INDEX klient_idx ON klient(nazwisko, imie);
@@ -419,3 +419,4 @@ insert into uczestnik values ('89081887811', 'Bury', 'Hubert', 0);
 insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
 insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
 insert into uczestnik values ('92032382341', 'Mania', 'Jakub', 1);
+commit; 
