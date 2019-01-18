@@ -420,9 +420,24 @@ insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
 insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
 insert into uczestnik values ('92032382341', 'Mania', 'Jakub', 1);
 
+DROP VIEW v_zajecia;
+
 CREATE VIEW v_zajecia 
 AS
-(SELECT z.id_zajec, z.dzien_tygodnia, to_char(z.godzina_rozp,'HH24') AS godz_start, to_char(z.godzina_zakon, 'MI') AS godz_koniec, z.dyscyplina, z.cena, z.trener_pesel, p.nazwisko, z.obiekt_sportowy_id_obiektu, z.sala_obiekt_sportowy_id_ob, z.sala_nr_sali
-FROM zajecia z LEFT JOIN trener t ON trener_pesel = t.PESEL LEFT JOIN pracownik p ON t.PESEL = p.PESEL);
+(SELECT z.id_zajec, 
+z.dzien_tygodnia, 
+to_char(z.godzina_rozp,'HH24:MI') AS godz_start, 
+to_char(z.godzina_zakon, 'HH24:MI') AS godz_koniec, 
+z.dyscyplina, 
+z.cena, 
+z.trener_pesel, 
+p.nazwisko, 
+z.obiekt_sportowy_id_obiektu, 
+z.sala_obiekt_sportowy_id_ob,
+z.sala_nr_sali
+FROM zajecia z
+    LEFT JOIN trener t ON trener_pesel = t.PESEL 
+    LEFT JOIN pracownik p ON t.PESEL = p.PESEL
+);
 
 commit; 
