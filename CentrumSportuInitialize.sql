@@ -2,8 +2,8 @@
 -- TO DO
 -- Dodac ograniczenie na wstawianie zajec, ktore juz w danym obiekcie sie o danym czasie odbywaja
 -- 
-
 /*
+
 --DROP ALL SEQUENCES
 BEGIN
   --Bye Sequences!
@@ -200,15 +200,15 @@ ALTER TABLE zawody ADD CONSTRAINT zawody_pk PRIMARY KEY ( nazwa );
 
 ALTER TABLE karnet
     ADD CONSTRAINT karnet_klient_fk FOREIGN KEY ( klient_id_klienta )
-        REFERENCES klient ( id_klienta );
+        REFERENCES klient ( id_klienta ) ON DELETE CASCADE;
 
 ALTER TABLE karnet
     ADD CONSTRAINT karnet_zajecia_fk FOREIGN KEY ( zajecia_id_zajec )
-        REFERENCES zajecia ( id_zajec );
+        REFERENCES zajecia ( id_zajec ) ON DELETE CASCADE;
 
 ALTER TABLE uczestnik
     ADD CONSTRAINT uczestnik_zawody_fk FOREIGN KEY ( zawody_nazwa )
-        REFERENCES zawody ( nazwa );
+        REFERENCES zawody ( nazwa ) ON DELETE CASCADE;
 
 --ALTER TABLE uczestnik_zawody
 --    ADD CONSTRAINT uczestnik_zawody_uczestnik_fk FOREIGN KEY ( uczestnik_pesel )
@@ -220,39 +220,39 @@ ALTER TABLE uczestnik
 
 ALTER TABLE sala
     ADD CONSTRAINT sala_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu );
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE CASCADE;
 
 ALTER TABLE trener
     ADD CONSTRAINT trener_pracownik_fk FOREIGN KEY ( pesel )
-        REFERENCES pracownik ( pesel );
+        REFERENCES pracownik ( pesel ) ON DELETE CASCADE;
 
 ALTER TABLE wyposazenie
     ADD CONSTRAINT wyposazenie_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu );
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE CASCADE;
 
 ALTER TABLE wyposazenie
     ADD CONSTRAINT wyposazenie_sala_fk FOREIGN KEY ( sala_obiekt_sportowy_id_ob,
     sala_nr_sali )
         REFERENCES sala ( obiekt_sportowy_id_obiektu,
-        nr_sali );
+        nr_sali ) ON DELETE CASCADE;
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu );
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE SET NULL;
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_sala_fk FOREIGN KEY ( sala_obiekt_sportowy_id_ob,
     sala_nr_sali )
         REFERENCES sala ( obiekt_sportowy_id_obiektu,
-        nr_sali );
+        nr_sali ) ON DELETE SET NULL;
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_trener_fk FOREIGN KEY ( trener_pesel )
-        REFERENCES trener ( pesel );
+        REFERENCES trener ( pesel ) ON DELETE SET NULL;
 
 ALTER TABLE zawody
     ADD CONSTRAINT zawody_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu );
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE SET NULL;
         
 
 CREATE OR REPLACE FUNCTION ilu_tren_w_obiekcie(id_obiektu IN INTEGER) RETURN NUMBER IS
@@ -444,5 +444,4 @@ FROM zajecia z
     LEFT JOIN trener t ON trener_pesel = t.PESEL 
     LEFT JOIN pracownik p ON t.PESEL = p.PESEL
 );
-
 commit; 
