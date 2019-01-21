@@ -2,8 +2,8 @@
 -- TO DO
 -- Dodac ograniczenie na wstawianie zajec, ktore juz w danym obiekcie sie o danym czasie odbywaja
 -- 
-/*
 
+/*
 --DROP ALL SEQUENCES
 BEGIN
   --Bye Sequences!
@@ -99,13 +99,13 @@ CREATE TABLE pracownik (
 
 ALTER TABLE pracownik ADD CONSTRAINT pracownik_pk PRIMARY KEY ( pesel );
 
-CREATE TABLE uczestnik_zawody (
-    zawody_nazwa      VARCHAR2(50) NOT NULL,
-    uczestnik_pesel   VARCHAR2(11) NOT NULL
-);
-
-ALTER TABLE uczestnik_zawody ADD CONSTRAINT uczestnik_zawody_pk PRIMARY KEY ( zawody_nazwa,
-uczestnik_pesel );
+--CREATE TABLE uczestnik_zawody (
+--    zawody_nazwa      VARCHAR2(50) NOT NULL,
+--    uczestnik_pesel   VARCHAR2(11) NOT NULL
+--);
+--
+--ALTER TABLE uczestnik_zawody ADD CONSTRAINT uczestnik_zawody_pk PRIMARY KEY ( zawody_nazwa,
+--uczestnik_pesel );
 
 CREATE TABLE sala (
     nr_sali                      VARCHAR2(50) NOT NULL,
@@ -123,13 +123,15 @@ CREATE TABLE trener (
 ALTER TABLE trener ADD CONSTRAINT trener_pk PRIMARY KEY ( pesel );
 
 CREATE TABLE uczestnik (
+    id_uczestnika   INTEGER NOT NULL,
     pesel      VARCHAR2(11) NOT NULL,
     nazwisko   VARCHAR2(50) NOT NULL,
     imie       VARCHAR2(20) NOT NULL,
-    oplacony   INTEGER NOT NULL
+    oplacony   INTEGER NOT NULL,
+    zawody_nazwa      VARCHAR2(50) NOT NULL
 );
 
-ALTER TABLE uczestnik ADD CONSTRAINT uczestnik_pk PRIMARY KEY ( pesel );
+ALTER TABLE uczestnik ADD CONSTRAINT uczestnik_pk PRIMARY KEY ( id_uczestnika );
 
 CREATE TABLE wyposazenie (
     id_wyposazenia               INTEGER NOT NULL,
@@ -204,13 +206,17 @@ ALTER TABLE karnet
     ADD CONSTRAINT karnet_zajecia_fk FOREIGN KEY ( zajecia_id_zajec )
         REFERENCES zajecia ( id_zajec );
 
-ALTER TABLE uczestnik_zawody
-    ADD CONSTRAINT uczestnik_zawody_uczestnik_fk FOREIGN KEY ( uczestnik_pesel )
-        REFERENCES uczestnik ( pesel );
-
-ALTER TABLE uczestnik_zawody
-    ADD CONSTRAINT uczestnik_zawody_zawody_fk FOREIGN KEY ( zawody_nazwa )
+ALTER TABLE uczestnik
+    ADD CONSTRAINT uczestnik_zawody_fk FOREIGN KEY ( zawody_nazwa )
         REFERENCES zawody ( nazwa );
+
+--ALTER TABLE uczestnik_zawody
+--    ADD CONSTRAINT uczestnik_zawody_uczestnik_fk FOREIGN KEY ( uczestnik_pesel )
+--        REFERENCES uczestnik ( pesel );
+--
+--ALTER TABLE uczestnik_zawody
+--    ADD CONSTRAINT uczestnik_zawody_zawody_fk FOREIGN KEY ( zawody_nazwa )
+--        REFERENCES zawody ( nazwa );
 
 ALTER TABLE sala
     ADD CONSTRAINT sala_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
@@ -415,12 +421,11 @@ insert into karnet values (3, 2, 245.04, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_
 insert into karnet values (1, 3, 210, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 insert into karnet values (1, 1, 180.5, TO_DATE('01-12-2018','DD-MM-YYYY'), TO_DATE('31-01-2019','DD-MM-YYYY'));
 
-insert into uczestnik values ('89081887811', 'Bury', 'Hubert', 0);
-insert into uczestnik values ('95051387618', 'Jaki', 'Patryk', 0);
-insert into uczestnik values ('92032384671', 'Nowy', 'Krzysztof', 1);
-insert into uczestnik values ('92032382341', 'Mania', 'Jakub', 1);
-
-DROP VIEW v_zajecia;
+create SEQUENCE seq_id_uczestnika minvalue 0 start with 0 increment by 1;
+insert into uczestnik values (seq_id_uczestnika.nextval,'89081887811', 'Bury', 'Hubert', 0, 'Mistrzostwa PP w Judo');
+insert into uczestnik values (seq_id_uczestnika.nextval,'95051387618', 'Jaki', 'Patryk', 0, 'Mistrzostwa Swinca w Tenisie Ziemnym');
+insert into uczestnik values (seq_id_uczestnika.nextval,'92032384671', 'Nowy', 'Krzysztof', 1, 'Mistrzostwa PP w Judo');
+insert into uczestnik values (seq_id_uczestnika.nextval,'92032382341', 'Mania', 'Jakub', 1, 'Mistrzostwa Swinca w Tenisie Ziemnym');
 
 CREATE VIEW v_zajecia 
 AS
