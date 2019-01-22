@@ -2,7 +2,7 @@
 -- TO DO
 -- Dodac ograniczenie na wstawianie zajec, ktore juz w danym obiekcie sie o danym czasie odbywaja
 -- 
-/*
+
 
 --DROP ALL SEQUENCES
 BEGIN
@@ -59,7 +59,6 @@ BEGIN
 END;
 /
 
-*/
 
 CREATE TABLE karnet (
     klient_id_klienta   INTEGER NOT NULL,
@@ -185,6 +184,7 @@ ALTER TABLE zajecia
             AND ( obiekt_sportowy_id_obiektu IS NULL )
         )
     );
+    
 
 ALTER TABLE zajecia ADD CONSTRAINT zajecia_pk PRIMARY KEY ( id_zajec );
 
@@ -200,7 +200,7 @@ ALTER TABLE zawody ADD CONSTRAINT zawody_pk PRIMARY KEY ( nazwa );
 
 ALTER TABLE karnet
     ADD CONSTRAINT karnet_klient_fk FOREIGN KEY ( klient_id_klienta )
-        REFERENCES klient ( id_klienta ) ON DELETE CASCADE;
+        REFERENCES klient ( id_klienta ) ON DELETE SET NULL;
 
 ALTER TABLE karnet
     ADD CONSTRAINT karnet_zajecia_fk FOREIGN KEY ( zajecia_id_zajec )
@@ -238,13 +238,13 @@ ALTER TABLE wyposazenie
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE SET NULL;
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE CASCADE;
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_sala_fk FOREIGN KEY ( sala_obiekt_sportowy_id_ob,
     sala_nr_sali )
         REFERENCES sala ( obiekt_sportowy_id_obiektu,
-        nr_sali ) ON DELETE SET NULL;
+        nr_sali ) ON DELETE CASCADE;
 
 ALTER TABLE zajecia
     ADD CONSTRAINT zajecia_trener_fk FOREIGN KEY ( trener_pesel )
@@ -252,8 +252,8 @@ ALTER TABLE zajecia
 
 ALTER TABLE zawody
     ADD CONSTRAINT zawody_obiekt_sportowy_fk FOREIGN KEY ( obiekt_sportowy_id_obiektu )
-        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE SET NULL;
-        
+        REFERENCES obiekt_sportowy ( id_obiektu ) ON DELETE CASCADE;
+
 
 CREATE OR REPLACE FUNCTION ilu_tren_w_obiekcie(id_obiektu IN INTEGER) RETURN NUMBER IS
     CURSOR c_w_obiekcie IS
